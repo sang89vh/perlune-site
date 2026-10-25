@@ -11,115 +11,78 @@
 <a class="home-link" href="index.html">&larr; Perlune</a>
 
 <h1>Privacy Policy — Perlune</h1>
-<p class="updated"><strong>Last updated: 20 August 2026</strong></p>
-
+<p class="updated"><strong>Last updated: 25 October 2026</strong></p>
 <h2>The short version</h2>
-<p><strong>Perlune does not collect your data.</strong> Your photos are processed entirely on your iPhone and are
-never uploaded anywhere. Perlune has no servers, no accounts, no analytics service, no advertising,
-and no third-party software development kits of any kind.</p>
-<p>There is no "except for" hiding below. The rest of this page explains what the app touches on your
-device and why, so that the sentence above can be checked rather than trusted.</p>
-
+<p><strong>Perlune does not collect your data.</strong> Your photos are edited on your iPhone. Perlune has no servers, no accounts, no analytics service, no advertising, and no third-party software development kits of any kind.</p>
+<p><strong>One exception, and it is yours to choose.</strong> A few optional features can send a sentence you type, or a photo, to <strong>Apple's Private Cloud Compute</strong>, or what you type to <strong>Apple's Image Playground</strong>. Each asks you first, nothing is sent if you decline, and Apple states that Private Cloud Compute keeps nothing after it answers. It is described in full below, so that it can be checked rather than trusted.</p>
 <hr>
-
 <h2>What Perlune does with your photos</h2>
-<p>Everything. On your device. Only.</p>
+<p>Everything is edited on your device. A photo leaves it only if you ask an optional feature to send it (see "Optional features that use Apple's servers" below).</p>
 <ul>
-<li><strong>Beautification, filters, retouching, colour grading, collage and every other edit</strong> run locally
-using Apple's own on-device frameworks (Vision for face detection, Core Image and Metal for image
-processing). No photograph, no video frame, no face landmark and no derived measurement is ever
-transmitted off your iPhone by Perlune.</li>
-<li><strong>Perlune has no server.</strong> There is nowhere for a photograph to be sent, because the developer
-operates no backend, no API and no storage service for this app.</li>
-<li><strong>Nothing is uploaded in the background.</strong> There is no sync, no cloud backup performed by
-Perlune, and no "improve the product by sharing images" option — because there is nothing behind
-such an option to share with.</li>
-<li><strong>Fun Masks</strong> finds where a face is — the eyes, the nose, the mouth — entirely on your device, so
-it can place a pair of ears or a pair of glasses in the right spot. Those positions exist only in
-memory while a frame is being drawn: they are never written to a file, never attached to a
-photograph you save, and never sent anywhere. <strong>Perlune does not recognise who anybody is.</strong> It
-cannot tell one face from another, it does not try to, and there is no face database in this app
-or behind it.</li>
+<li><strong>Beautification, filters, retouching, colour grading, collage and every other edit</strong> run locally using Apple's own on-device frameworks (Vision for face detection, Core Image and Metal for image processing). No video frame, no face landmark and no derived face measurement is ever transmitted off your iPhone, and a photograph only in the one case described below.</li>
+<li><strong>Perlune has no server.</strong> The developer operates no backend, no API and no storage service for this app, and receives nothing you send to Apple.</li>
+<li><strong>Nothing is uploaded in the background.</strong> There is no sync, no cloud backup performed by Perlune, and no "improve the product by sharing images" option — because there is nothing behind such an option to share with.</li>
+<li><strong>Fun Masks</strong> finds where a face is — the eyes, the nose, the mouth — entirely on your device, so it can place a pair of ears or a pair of glasses in the right spot. Those positions exist only in memory while a frame is being drawn: they are never written to a file, never attached to a photograph you save, and never sent anywhere. <strong>Perlune does not recognise who anybody is.</strong> It cannot tell one face from another, it does not try to, and there is no face database in this app or behind it.</li>
 </ul>
-
 <h2>Permissions Perlune asks for, and why</h2>
-<table>
+<div class="table-wrap"><table>
 <thead><tr><th>Permission</th><th>Why it is requested</th><th>What leaves your device</th></tr></thead>
 <tbody>
-<tr><td><strong>Camera</strong></td><td>To take photographs inside the app</td><td>Nothing</td></tr>
-<tr><td><strong>Photo Library (read)</strong></td><td>To import a photograph you choose to edit</td><td>Nothing</td></tr>
+<tr><td><strong>Camera</strong></td><td>To take photographs inside the app</td><td>Nothing, unless you send a photo with an optional feature below</td></tr>
+<tr><td><strong>Photo Library (read)</strong></td><td>To import a photograph you choose to edit</td><td>Nothing, unless you send a photo with an optional feature below</td></tr>
 <tr><td><strong>Photo Library (add)</strong></td><td>To save an edited photograph back to your library</td><td>Nothing</td></tr>
-</tbody>
-</table>
-<p>You may decline any of these in iOS Settings. Declining the camera permission means you can still
-edit photographs you import; declining library access means you can still take and share
-photographs without saving them to your library.</p>
-
+</tbody></table></div>
+<p>You may decline any of these in iOS Settings. Declining the camera permission means you can still edit photographs you import; declining library access means you can still take and share photographs without saving them to your library.</p>
+<h2>Optional features that use Apple's servers</h2>
+<p>On an iPhone with Apple Intelligence (and, for the sentence and photo features, iOS 27), Perlune offers a few optional features built on Apple's own frameworks. On other iPhones they are not shown.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Feature</th><th>What is sent</th><th>Where</th><th>When</th></tr></thead>
+<tbody>
+<tr><td>Edit by sentence, Describe a preset, Describe a layout, Ask the editor</td><td>The sentence you type, with the numbers it needs (your current adjustment levels, or the names and settings of your own presets and filters when you search them). Never your photo</td><td>Apple's Private Cloud Compute</td><td>Only after you agree on a one-time consent screen</td></tr>
+<tr><td>Suggest from this photo, Describe this photo</td><td>The photo, made smaller (at most 1024 pixels) and with its location and all other metadata removed; for a suggestion, the names and settings of your presets</td><td>Answered on your iPhone when it can; otherwise Apple's Private Cloud Compute</td><td>Only after you agree on a separate one-time consent screen for photos</td></tr>
+<tr><td>Image Playground stickers, backgrounds, backdrops and cover art</td><td>What you type or pick in Apple's Image Playground screen (personalization from your photo library is turned off)</td><td>Apple</td><td>Only after you agree on a one-time consent screen</td></tr>
+</tbody></table></div>
+<ul>
+<li><strong>Apple, not Perlune.</strong> These requests go from your iPhone to Apple through Apple's frameworks. Perlune has no server in between and receives nothing. Apple states that Private Cloud Compute uses your data only to answer the request, keeps none of it after the response, and that it is not available to Apple staff. Apple's Apple Intelligence terms and privacy policy govern that processing.</li>
+<li><strong>A daily allowance</strong> applies, set by Apple and tied to your iCloud account. Perlune cannot read your account; it only knows whether the allowance is nearly or fully used.</li>
+<li><strong>Nothing is added to your photo.</strong> Text a model writes is never put into a photo or its edit record; the record notes only that a change was proposed from a sentence or a photo, and where it was answered.</li>
+<li><strong>You can withdraw consent</strong> at any time: camera screen → info button → About → <strong>Forget my consent</strong>. Each feature then asks again before sending anything.</li>
+</ul>
 <h2>What is stored on your device</h2>
-<p>Perlune keeps a small amount of data locally so the app is usable between launches. <strong>All of it
-stays on your iPhone</strong>, and all of it is removed when you delete the app:</p>
+<p>Perlune keeps a small amount of data locally so the app is usable between launches. <strong>All of it stays on your iPhone</strong>, and all of it is removed when you delete the app:</p>
 <ul>
 <li>Your custom presets, custom filters and custom stickers.</li>
 <li>Your favourite filters, and your preference settings (for example whether the watermark is on).</li>
 <li>An unfinished edit, so that reopening the app returns you to where you left off.</li>
-<li>Nothing else. There is no profile, no history of what you photographed, and no usage log that
-leaves the current app session.</li>
+<li>Whether you agreed to each optional feature's consent screen, and pictures you made in Image Playground and kept.</li>
+<li>Nothing else. There is no profile, no history of what you photographed, and no usage log that leaves the current app session.</li>
 </ul>
-
 <h2>Accounts</h2>
-<p>There are none. Perlune does not ask you to register, does not have a sign-in screen, and cannot
-read the Apple Account your device is signed in to.</p>
-
+<p>There are none. Perlune does not ask you to register, does not have a sign-in screen, and cannot read the Apple Account your device is signed in to.</p>
 <h2>Analytics, advertising and tracking</h2>
 <ul>
 <li><strong>No analytics service.</strong> Perlune integrates no analytics vendor of any kind.</li>
 <li><strong>No advertising.</strong> Perlune shows no advertisements and contains no advertising network code.</li>
-<li><strong>No tracking.</strong> Perlune does not read the Advertising Identifier (IDFA), the Vendor Identifier
-(IDFV), or any other device identifier, and does not track you across apps or websites owned by
-other companies. Perlune does not present an App Tracking Transparency prompt because it has no
-tracking to request permission for.</li>
-<li><strong>No crash-reporting vendor.</strong> If you have opted in to sharing diagnostics with Apple in iOS
-Settings, Apple may provide the developer with crash reports through Apple's own systems, under
-Apple's privacy policy. Perlune itself sends nothing.</li>
+<li><strong>No tracking.</strong> Perlune does not read the Advertising Identifier (IDFA), the Vendor Identifier (IDFV), or any other device identifier, and does not track you across apps or websites owned by other companies. Perlune does not present an App Tracking Transparency prompt because it has no tracking to request permission for.</li>
+<li><strong>No crash-reporting vendor.</strong> If you have opted in to sharing diagnostics with Apple in iOS Settings, Apple may provide the developer with crash reports through Apple's own systems, under Apple's privacy policy. Perlune itself sends nothing.</li>
 </ul>
-
 <h2>Purchases</h2>
-<p>Perlune offers an optional premium upgrade: a monthly subscription, a yearly subscription, or a
-one-time lifetime unlock.</p>
+<p>Perlune offers an optional premium upgrade: a monthly subscription, a yearly subscription, or a one-time lifetime unlock.</p>
 <ul>
-<li><strong>Payment is handled entirely by Apple.</strong> The transaction is between you and Apple. Perlune never
-sees your payment details, never transmits a receipt anywhere, and creates no account for you.</li>
-<li><strong>Your purchase is verified on your device</strong>, using the signed transaction iOS provides. There is
-no validation server, because there is no server.</li>
-<li><strong>The developer receives aggregate sales reports from Apple</strong>, through App Store Connect, under
-Apple's own privacy policy — the same arrangement as any paid app on the App Store. These reports
-do not identify you to the developer.</li>
-<li><strong>Subscriptions renew through your Apple Account</strong> and can be managed or cancelled at any time in
-iOS Settings → your name → Subscriptions. Deleting the app does not cancel a subscription.</li>
+<li><strong>Payment is handled entirely by Apple.</strong> The transaction is between you and Apple. Perlune never sees your payment details, never transmits a receipt anywhere, and creates no account for you.</li>
+<li><strong>Your purchase is verified on your device</strong>, using the signed transaction iOS provides. There is no validation server, because there is no server.</li>
+<li><strong>The developer receives aggregate sales reports from Apple</strong>, through App Store Connect, under Apple's own privacy policy — the same arrangement as any paid app on the App Store. These reports do not identify you to the developer.</li>
+<li><strong>Subscriptions renew through your Apple Account</strong> and can be managed or cancelled at any time in iOS Settings → your name → Subscriptions. Deleting the app does not cancel a subscription.</li>
 </ul>
-
 <h2>Sharing a photograph to another app</h2>
-<p>When you tap Share, iOS presents its own system share sheet and you choose the destination. The
-photograph is handed by the operating system directly to the app you picked. It does not pass
-through Perlune's servers, because Perlune has none. <strong>Once a photograph reaches another app or
-service, that company's privacy policy governs what happens to it</strong> — not this one.</p>
-
+<p>When you tap Share, iOS presents its own system share sheet and you choose the destination. The photograph is handed by the operating system directly to the app you picked. It does not pass through Perlune's servers, because Perlune has none. <strong>Once a photograph reaches another app or service, that company's privacy policy governs what happens to it</strong> — not this one.</p>
 <h2>Children</h2>
-<p>Perlune is not directed at children and does not knowingly collect information from anyone,
-including children — because it does not collect information from anyone at all.</p>
-
+<p>Perlune is not directed at children and does not knowingly collect information from anyone, including children — because it does not collect information from anyone at all.</p>
 <h2>Your rights</h2>
-<p>Data-protection laws such as the GDPR and the CCPA give you rights to access, correct, export and
-delete personal data a company holds about you. <strong>The developer of Perlune holds no personal data
-about you</strong>, so there is nothing to access, export or delete on request. The data described under
-"What is stored on your device" is yours, on your own hardware, and you can remove all of it by
-deleting the app.</p>
-
+<p>Data-protection laws such as the GDPR and the CCPA give you rights to access, correct, export and delete personal data a company holds about you. <strong>The developer of Perlune holds no personal data about you</strong>, so there is nothing to access, export or delete on request. The data described under "What is stored on your device" is yours, on your own hardware, and you can remove all of it by deleting the app.</p>
 <h2>Changes to this policy</h2>
-<p>If a future version of Perlune ever transmits anything off your device, this page will be updated
-<strong>before</strong> that version is released, and the change will be described here rather than folded in
-silently. The "Last updated" date above will change accordingly.</p>
-
+<p>If a future version of Perlune ever transmits anything off your device beyond what is described here, this page will be updated <strong>before</strong> that version is released, and the change will be described here rather than folded in silently. The "Last updated" date above will change accordingly.</p>
+<p><strong>25 October 2026:</strong> added "Optional features that use Apple's servers" for the first release that offers them; the short version and the permission table now say when a photo can leave your iPhone.</p>
 <h2>Contact</h2>
 <p>Questions about this policy, or about privacy in Perlune:</p>
 <ul>
